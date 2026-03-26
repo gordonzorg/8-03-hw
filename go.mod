@@ -1,11 +1,3 @@
-package main
+module 8-03-hw
 
-import "testing"
-
-func TestHello(t *testing.T) {
-	want := "Hello world!"
-	got := hello("world")
-	if got != want {
-		t.Errorf("want: %s got: %s", want, got)
-	}
-}
+go 1.17
