@@ -43,7 +43,27 @@
 
 файл gitlab-ci.yml для своего проекта или вставьте код в соответствующее поле в шаблоне;
 скриншоты с успешно собранными сборками.
+
 ![Скришот успешной сборки](https://github.com/gordonzorg/8-03-hw/tree/main/img/img2.png)`
 
 ```YAML
-``
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: golang:1.17
+  script: 
+   - go test .
+  tags:
+    - teg1
+
+build:
+  stage: build
+  image: docker:20.10.21
+  script:
+   - docker build .
+  tags:
+    - teg1
+```
