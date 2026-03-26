@@ -8,7 +8,7 @@ test:
   script: 
    - go test .
   tags:
-    - tag1
+    - teg1
 
 build:
   stage: build
@@ -16,4 +16,4 @@ build:
   script:
    - docker build .
   tags:
-    - tag1
+    - teg1
